@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  message: MyText
+  plain: MyText
+  html: MyText
+  from: MyText
+  to: MyText
+  subject: MyText
+
+two:
+  message: MyText
+  plain: MyText
+  html: MyText
+  from: MyText
+  to: MyText
+  subject: MyText
