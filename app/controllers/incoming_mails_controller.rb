@@ -8,7 +8,7 @@ class IncomingMailsController < ApplicationController
     
     Email.create :message => message.body.decoded,
       :plain => message.body.decoded,
-      :from => message.from.addresses.join(', '),
+      :from => message.from.join(', '),
       :to => message.to,
       :subject => message.subject
 
