@@ -1,0 +1,10 @@
+<% @emails.each do |email| %>
+   <%= email.message %>
+   <%= email.plain %>
+   <%= email.html %>
+   <%= email.from %>
+   <%= email.to %>
+   <%= email.subject %>
+   <%= email.created_at %>
+   <%= email.updated_at %>
+<% end %>
