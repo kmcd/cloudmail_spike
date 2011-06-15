@@ -9,5 +9,5 @@
 
 <% @email.replies.each do |reply| %>
    <p>From: <%= reply.from %></p>
-   <%= @email.to_html.html_safe %>
+   <%= reply.to_html.html_safe %>
 <% end %>
