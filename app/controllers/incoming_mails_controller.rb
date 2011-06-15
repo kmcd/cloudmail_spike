@@ -9,7 +9,7 @@ class IncomingMailsController < ApplicationController
     Email.create :message => message.body.decoded,
       :plain => message.body.decoded,
       :from => message.from.join(', '),
-      :to => message.to,
+      :to => message.to.join(', '),
       :subject => message.subject
 
     render :text => 'success', :status => 200 # a status of 404 would reject the mail

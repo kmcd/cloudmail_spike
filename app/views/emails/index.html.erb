@@ -1,10 +1,17 @@
-<% @emails.each do |email| %>
-   <%= email.message %>
-   <%= email.plain %>
-   <%= email.html %>
-   <%= email.from %>
-   <%= email.to %>
-   <%= email.subject %>
-   <%= email.created_at %>
-   <%= email.updated_at %>
-<% end %>
+<table>
+   <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Subject</th>
+      <th>Messsage</th>
+   </tr>
+   
+   <% @emails.each do |email| %>
+      <tr>
+         <td><%= email.from %></td>
+         <td><%= email.to %></td>
+         <td><%= email.subject %></td>
+         <td><%= email.message %></td>
+      </tr>
+   <% end %>
+</table>
