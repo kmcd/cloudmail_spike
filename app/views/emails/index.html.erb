@@ -11,7 +11,7 @@
          <td><%= email.from %></td>
          <td><%= email.to %></td>
          <td><%= email.subject %></td>
-         <td><%= email.message %></td>
+         <td><%= link_to email_path(email), email.message %></td>
       </tr>
    <% end %>
 </table>
