@@ -1,0 +1,7 @@
+<h1><%= @email.subject %></h1>
+
+<p>From: <%= @email.from %></p>
+<p>Reply to: <%= mail_to @email.reply_to %></p>
+
+
+<%= @email.to_html.html_safe %>
