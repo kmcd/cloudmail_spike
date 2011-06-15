@@ -1,6 +1,6 @@
 class EmailsController < ApplicationController
   def index
-    @emails = Email.all
+    @emails = Email.threads
   end
   
   def show

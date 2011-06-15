@@ -1,4 +1,6 @@
 class Email < ActiveRecord::Base
+  scope :threads, where("emails.to NOT LIKE '647b9c8e2c179d02a0db+%@cloudmailin.net'")
+  
   def to_param
     [ id, subject ].join '-'
   end
