@@ -1,7 +1,8 @@
 Cloudmail::Application.routes.draw do
   resources :emails
-
   match '/incoming_emails' => 'incoming_mails#create'
+  
+  root :to => "emails#index"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
